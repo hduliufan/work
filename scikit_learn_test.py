@@ -91,11 +91,11 @@ plot_decision_regions(x_combine_scaler,y_combine,ppn,
 plt.xlabel('petal length [standardized]')
 plt.ylabel('petal width [standardized]')
 plt.legend(loc = 'upper left')
-plt.show()
+
 
 #sklearn.svm .SVC
 
-svm = SVC(kernel='rbf', gamma= 0.2, C=1.0,random_state=0)#C为正则系数的倒数c越大则惩罚越大
+svm = SVC(kernel='rbf', gamma= 100.0, C=10.0,random_state=0)#C为正则系数的倒数c越大则惩罚越大
 #几何间隔小，c越小，惩罚不严格，几何间隔越大
 svm.fit(x_train_scaler , y_train)
 y_predict_3 = svm.predict(x_test_scaler)

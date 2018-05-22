@@ -41,7 +41,7 @@ class AdalineSGD(object):
         if not self.w_initialized:
             self._initialized_weight(x.shape[1])
         #ravel is successiful?
-        if y.ravel().shape[0] > 1:
+        if y.ravel().shape[1] > 1:
             for xi ,yi in zip(x , y):
                 self._updata_weight(xi ,yi)
         else:

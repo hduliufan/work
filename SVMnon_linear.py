@@ -6,9 +6,8 @@ import matplotlib.pyplot as plt
 from sklearn.svm import SVC
 from matplotlib.colors import ListedColormap
 import matplotlib.pyplot as plt
-from scikit_learn_test import plot_decision_regions
+#from scikit_learn_test import plot_decision_regions
 
-'''
 def plot_decision_regions(x,y,classifier,test_idx=None,resolution=0.02):
     #setup marker generator and color map
     markers = ('s','x','o','^','v')
@@ -42,7 +41,7 @@ def plot_decision_regions(x,y,classifier,test_idx=None,resolution=0.02):
         plt.scatter(x_test[:,0],x_test[:,1],
                     c='k',alpha=1.0,linewidths=1,
                     marker='o',s=5,label='test_set')
-'''
+
 
 np.random.seed(0)
 x_xor = np.random.randn(200,2)
